@@ -1163,6 +1163,10 @@ Team
     font-size: 14px;
 }
 
+.form-text:after{
+    content: " *";
+    color: red;
+}
 
 /*-------------------------
     Progress Bar
