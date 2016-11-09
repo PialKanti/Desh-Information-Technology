@@ -1145,9 +1145,22 @@ Team
     z-index: 1;
 }
 
+/* --------------------------------------------
+    Registration Form
+----------------------------------------------- */
+
 .registration {
     background: url(../img/img-registration.jpg) no-repeat bottom;
     background-size: cover;
+}
+
+.registration-container {
+    max-width: 730px;
+}
+
+.form-text{
+    color: #333;
+    font-size: 14px;
 }
 
 
@@ -1558,15 +1571,6 @@ service-icon-style
 
 .user-message::after {
     content: "\f086";
-}
-
-
-/*---------------
- Registration Form
- -----------------*/
-
-.registration-container {
-    max-width: 730px;
 }
 
 
