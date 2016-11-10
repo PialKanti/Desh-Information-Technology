@@ -971,16 +971,20 @@ Team
     margin: 0;
 }
 
+
 /* ----------------------------------------------
 Gallery
 ------------------------------------------------- */
-.see_more{
+
+.see_more {
     float: right;
 }
-.img-responsive>img{
-    width:360px;
-    height:265px;
+
+.img-responsive>img {
+    width: 360px;
+    height: 265px;
 }
+
 
 /* --------------------------------------------------
       testimonial start
@@ -1132,6 +1136,7 @@ Gallery
     z-index: 1;
 }
 
+
 /* --------------------------------------------
     Registration Form
 ----------------------------------------------- */
@@ -1145,23 +1150,26 @@ Gallery
     max-width: 730px;
 }
 
-.form-text{
+.form-text {
     color: #333;
     font-size: 14px;
 }
 
-.form-text:after{
+.form-text:after {
     content: " *";
     color: red;
 }
 
+
 /* --------------------------------------------
    Contact Us
 ----------------------------------------------- */
-.contact_us{
-    background:url(../img/img_contact_us.jpg) no-repeat bottom;
+
+.contact_us {
+    background: url(../img/img_contact_us.jpg) no-repeat bottom;
 }
-.contact-container{
+
+.contact-container {
     max-width: 730px;
 }
 
@@ -1410,13 +1418,18 @@ service-icon-style
     text-overflow: ellipsis;
 }
 
-.list-group-item:hover>.fa-bell{
+
+.list-group-item:hover>.fa-bell {
     color: #A004DA;
+    transition: 0.9s;
+    transform: rotateY(180deg);
 }
-.list-group-item:hover>.notice-text{
+
+.list-group-item:hover>.notice-text {
     color: #A004DA;
     font-style: italic;
 }
+
 
 /*----------------------
  Company name text
@@ -1503,7 +1516,6 @@ service-icon-style
 .form-group {
     margin-bottom: 20px;
 }
-
 
 .contact-form {
     height: 53px;
