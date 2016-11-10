@@ -949,7 +949,8 @@ Team
 }
 
 .team .thumbnail img {
-    width: 100%;
+    width: 360px;
+    height: 240px;
 }
 
 .team .thumbnail .caption {
@@ -970,6 +971,16 @@ Team
     margin: 0;
 }
 
+/* ----------------------------------------------
+Gallery
+------------------------------------------------- */
+.see_more{
+    float: right;
+}
+.img-responsive>img{
+    width:360px;
+    height:265px;
+}
 
 /* --------------------------------------------------
       testimonial start
@@ -1087,30 +1098,6 @@ Team
 /*testimonial end*/
 
 
-/* client-logo */
-
-.client-logo {}
-
-.client-logo a img {
-    width: 100%;
-    opacity: 0.5;
-    -webkit-transition: all 0.8s ease 0s;
-    -moz-transition: all 0.8s ease 0s;
-    -o-transition: all 0.8s ease 0s;
-    transition: all 0.8s ease 0s;
-}
-
-.client-logo a:hover img {
-    opacity: 1;
-}
-
-@media (max-width: 992px) {
-    .client-logo .section-margin {
-        margin-bottom: 30px;
-    }
-}
-
-
 /* --------------------------------------------
     Page Title
 ----------------------------------------------- */
@@ -1167,6 +1154,17 @@ Team
     content: " *";
     color: red;
 }
+
+/* --------------------------------------------
+   Contact Us
+----------------------------------------------- */
+.contact_us{
+    background:url(../img/img_contact_us.jpg) no-repeat bottom;
+}
+.contact-container{
+    max-width: 730px;
+}
+
 
 /*-------------------------
     Progress Bar
@@ -1412,6 +1410,13 @@ service-icon-style
     text-overflow: ellipsis;
 }
 
+.list-group-item:hover>.fa-bell{
+    color: #A004DA;
+}
+.list-group-item:hover>.notice-text{
+    color: #A004DA;
+    font-style: italic;
+}
 
 /*----------------------
  Company name text
@@ -1500,21 +1505,21 @@ service-icon-style
 }
 
 
-/*.form-control {
+.contact-form {
     height: 53px;
     padding: 6px 20px 6px 30px;
     font-size: 13px;
     line-height: 24px;
-    color: #969595;
-    border: 2px solid #F1F1F1;
-    border-radius: 0;
+    color: #555;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-shadow: none;
 }
 
-.form-control:focus {
+.contact-form:focus {
     border: 2px solid #31aae2 !important;
     box-shadow: none;
-}*/
+}
 
 
 /*---------------

@@ -182,44 +182,6 @@
                     </div>
                 </section>
                 <!-- .contact-form-->
-                <script>
-                    $(document).ready(function () {
-                        $('#datePicker').datepicker({
-                            format: 'mm/dd/yyyy'
-                        }).on('changeDate', function (e) {
-                            // Revalidate the date field
-                            $('#eventForm').formValidation('revalidateField', 'date');
-                        });
-                        $('#eventForm').formValidation({
-                            framework: 'bootstrap'
-                            , icon: {
-                                valid: 'glyphicon glyphicon-ok'
-                                , invalid: 'glyphicon glyphicon-remove'
-                                , validating: 'glyphicon glyphicon-refresh'
-                            }
-                            , fields: {
-                                name: {
-                                    validators: {
-                                        notEmpty: {
-                                            message: 'The name is required'
-                                        }
-                                    }
-                                }
-                                , date: {
-                                    validators: {
-                                        notEmpty: {
-                                            message: 'The date is required'
-                                        }
-                                        , date: {
-                                            format: 'MM/DD/YYYY'
-                                            , message: 'The date is not a valid'
-                                        }
-                                    }
-                                }
-                            }
-                        });
-                    });
-                </script>
                 <footer class="footer">
                     <!-- Footer Widget Section -->
                     <div class="footer-widget-section">
@@ -229,7 +191,7 @@
                                     <div class="footer-widget widget_text">
                                         <div class="footer-logo">
                                             <a href="#">
-                                                <p class="h3 company-name">Desh Infomation Technology</p>
+                                                <p class="h3 company-name">Desh Information Technology</p>
                                             </a>
                                         </div>
                                         <p>Continually matrix cross functional opportunities whereas ethical information. Compellingly streamline enabled human capital before resource-leveling internal or "organic".</p>
@@ -265,7 +227,7 @@
                     </div>
                     <!-- /.Footer Widget Section -->
                     <div class="copyright-section">
-                        <div class="container clearfix"> <span class="copytext">Copyright &copy; 2016 | <a href="index.html">Desh Infomation Technology Ltd.</a> Designed And Developed By: <strong style="color: #31aae2;">.com</strong></span>
+                        <div class="container clearfix"> <span class="copytext">Copyright &copy; 2016 | <a href="index.html">Desh Information Technology Ltd.</a>&nbsp;&nbsp;&nbsp;Designed And Developed By: <strong style="color: #31aae2;">.com</strong></span>
                             <ul class="list-inline pull-right">
                                 <li class="active"><a href="#">Home</a></li>
                                 <li><a href="#">Admin Panel</a></li>
