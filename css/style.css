@@ -990,10 +990,6 @@ Gallery
       testimonial start
 -----------------------------------------------------*/
 
-.testimonial .section-title h2 {
-    color: #ffffff;
-}
-
 .testimonial {
     padding: 100px 0px;
     color: #ffffff;
@@ -1010,7 +1006,8 @@ Gallery
     /* IE6-9 fallback on horizontal gradient */
 }
 
-.testimonial .carousel-control {
+
+/*.testimonial .carousel-control {
     text-shadow: none;
 }
 
@@ -1039,7 +1036,7 @@ Gallery
 #testimonialSlider .carousel-inner .item blockquote p {
     font-size: 20px;
     line-height: 34px;
-    /*padding: 0px 80px;*/
+    padding: 0px 80px;
     font-weight: 300;
 }
 
@@ -1059,7 +1056,6 @@ Gallery
 }
 
 @media (min-width: 768px) {
-    /*custom-padding class*/
     #testimonialSlider .carousel-indicators {
         bottom: -60px;
     }
@@ -1097,6 +1093,7 @@ Gallery
         padding: 0;
     }
 }
+*/
 
 
 /*testimonial end*/
@@ -1399,32 +1396,69 @@ service-icon-style
  Notice board text
  -----------------------*/
 
-.list-group-item {
+.text-center-notice>h2 {
+    color: #ffffff;
+}
+
+.list-item {
     font-size: 13pt;
     font-weight: bold;
 }
 
+.notice-row {
+    background: #ffffff;
+    padding: 10px 0px 10px 5px;
+    margin-left: 4px;
+    margin-bottom: 2px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
 .time-text {
+    text-align: right;
     font-size: 10pt;
+    margin-left: 40px;
     font-weight: normal;
     font-style: oblique;
+    color: #555;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .time-text {
+        text-align: left;
+        margin-left: 40px;
+    }
+    .notice-text {
+        display: inline-block;
+        min-width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .notice-row {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 }
 
 .notice-text {
     display: inline-block;
     width: 700px;
+    color: #555;
     white-space: nowrap;
     overflow: hidden !important;
     text-overflow: ellipsis;
 }
 
-.list-group-item:hover>.fa-bell {
+.list-item:hover > .fa-bell {
     color: #A004DA;
     transition: 0.9s;
     transform: rotateY(180deg);
 }
 
-.list-group-item:hover>.notice-text {
+.list-item:hover > .notice-text {
     color: #A004DA;
     font-style: italic;
 }
@@ -1432,6 +1466,7 @@ service-icon-style
 .see_more_notice {
     float: right;
     margin-top: 20px;
+    margin-right: 4px;
     background: #ffffff;
     border-color: #ffffff;
     color: darkslategrey;
@@ -1472,6 +1507,11 @@ service-icon-style
         white-space: nowrap;
         overflow: hidden !important;
         text-overflow: ellipsis;
+    }
+    .logo{
+        width: 300px;
+        height: auto;
+        margin-top: 6px;
     }
 }
 
