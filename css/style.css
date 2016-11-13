@@ -1441,9 +1441,16 @@ service-icon-style
         margin-left: 2px;
         margin-right: 2px;
     }
-    .single-page-title h2{
-        font-size: 25px;
-    }
+    .single-page-title h2 {
+    display: inline-block;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0;
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
 }
 
 .notice-text {
