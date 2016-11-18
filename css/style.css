@@ -337,6 +337,12 @@ Shortcode Content
  NAVIGATION & HEADER STYLE
 --------------------------------*/
 
+/*navbar conatainer-fluid*/
+.container-fluid{
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
 
 /*Navigation*/
 
@@ -1164,6 +1170,7 @@ Gallery
 
 .contact_us {
     background: url(../img/img_contact_us.jpg) no-repeat bottom;
+    background-size: cover;
 }
 
 .contact-container {
