@@ -66,11 +66,11 @@
                                 </li>
                             </ul> -->
                             <ul class="nav navbar-nav navbar-right main-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="#">Branch</a></li>
-                                <li><a href="result.html">Result</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="registration.html">Registration</a></li>
+                                <li><a href="result.php">Result</a></li>
+                                <li><a href="courses.php">Courses</a></li>
+                                <li><a href="registration.php">Registration</a></li>
                                 <!-- <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Registration
                     <span><i class="fa fa-angle-down"></i></span></a>
                                     <ul class="dropdown-menu">
@@ -83,7 +83,7 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                                <li><a href="contact.html">Any query</a></li>
+                                <li><a href="contact.php">Any query</a></li>
                             </ul>
                         </div>
                         <!-- .navbar-collapse -->
@@ -184,12 +184,12 @@
             <div>
                 <div>
                     <ul id="menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Branch</a></li>
-                        <li><a href="result.html">Result</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                        <li><a href="contact.html">Any query</a></li>
+                        <li><a href="result.php">Result</a></li>
+                        <li><a href="courses.php">Courses</a></li>
+                        <li><a href="registration.php">Registration</a></li>
+                        <li><a href="contact.php">Any query</a></li>
                     </ul>
                 </div>
             </div>

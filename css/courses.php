@@ -66,11 +66,11 @@
                                 </li>
                             </ul> -->
                             <ul class="nav navbar-nav navbar-right main-nav">
-                                <li class="active"><a href="index.html">Home</a></li>
+                                <li class="active"><a href="index.php">Home</a></li>
                                 <li><a href="#">Branch</a></li>
-                                <li><a href="result.html">Result</a></li>
-                                <li><a href="#">Courses</a></li>
-                                <li><a href="registration.html">Registration</a></li>
+                                <li><a href="result.php">Result</a></li>
+                                <li><a href="courses.php">Courses</a></li>
+                                <li><a href="registration.php">Registration</a></li>
                                 <!-- <li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Registration
                     <span><i class="fa fa-angle-down"></i></span></a>
                                     <ul class="dropdown-menu">
@@ -83,7 +83,7 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                                <li><a href="contact.html">Any query</a></li>
+                                <li><a href="contact.php">Any query</a></li>
                             </ul>
                         </div>
                         <!-- .navbar-collapse -->
@@ -91,94 +91,65 @@
                     <!-- .container -->
                 </nav>
                 <!-- .nav -->
-                <section class="single-page-title registration">
+                <section class="single-page-title course">
                     <div class="container text-center">
-                        <h2 class="page-slider-title">Registration</h2> </div>
+                        <h2 class="page-slider-title">Courses We offer</h2> </div>
                 </section>
                 <!-- .page-title -->
-                <section class="registration-form ptb-100">
-                    <div class="container registration-container">
-                        <h1 class="well">Registration Form</h1>
-                        <div class="col-lg-12 well">
-                            <div class="row">
-                                <form action='' method="POST">
-                                    <div class="col-sm-12">
-                                        <div class="row">
-                                            <div class="col-sm-8 form-group required">
-                                                <label class="form-text">Branch</label>
-                                                <input type="text" placeholder="Enter First Name Here.." class="form-control"> </div>
-                                            <div class="col-sm-4 form-group">
-                                                <label class="form-text">Branch Code</label>
-                                                <input type="text" placeholder="Enter Last Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group required">
-                                                <label class="form-text">Student Name</label>
-                                                <input type="text" placeholder="Enter Your Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group required">
-                                                <label class="form-text">Father's Name</label>
-                                                <input type="text" placeholder="Enter Your Father's Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group required">
-                                                <label class="form-text">Mother's Name</label>
-                                                <input type="text" placeholder="Enter Your Mother's Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-7 form-group required">
-                                                <label class="form-text">Course Name</label>
-                                                <input type="text" placeholder="Enter Course Name.." class="form-control"> </div>
-                                            <div class="col-sm-5 form-group required">
-                                                <label class="form-text">Session</label>
-                                                <input type="text" placeholder="Enter Course Name.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 form-group required">
-                                                <label class="form-text">Education(Last Academy)</label>
-                                                <input type="text" placeholder="Enter Course Name.." class="form-control"> </div>
-                                            <div class="col-sm-4 form-group required">
-                                                <label class="form-text">Birth date</label>
-                                                <div class="input-group input-append date" id="datePicker">
-                                                    <input type="text" class="form-control" name="date" /> <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group required">
-                                                <label class="form-text">Exam</label>
-                                                <input type="text" placeholder="Enter Your Father's Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-12 form-group required">
-                                                <label class="form-text">Board/University</label>
-                                                <input type="text" placeholder="Enter Your Father's Name Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-5 form-group required">
-                                                <label class="form-text">Roll</label>
-                                                <input type="text" placeholder="Enter Your Roll Here.." class="form-control"> </div>
-                                            <div class="col-sm-5 col-sm-offset-2 form-group required">
-                                                <label class="form-text">Reg</label>
-                                                <input type="text" placeholder="Enter Your Reg Here.." class="form-control"> </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-5 form-group required">
-                                                <label class="form-text">Result</label>
-                                                <input type="text" placeholder="Enter Result Here.." class="form-control"> </div>
-                                            <div class="col-sm-5 col-sm-offset-2 form-group required">
-                                                <label class="form-text">Year</label>
-                                                <input type="text" placeholder="Enter Passing Year.." class="form-control"> </div>
-                                        </div>
-                                        <div class="form-group"> <span class="text-muted"><em><span style="color:red;font-size:14px">*</span> Indicates required field</em>
-                                            </span>
-                                        </div>
-                                        <button type="button" class="btn btn-lg btn-info">Submit</button>
-                                    </div>
-                                </form>
-                            </div>
+                <!-- Course Header -->
+                <section class="course-header">
+                    <div class="row">
+                        <div class="col-md-8 col-md-offset-2 well">
+                            <div class="institute-name col-md-12">
+                                <h1>DESH INFORMATION TECHNOLOGY</h1></div>
+                            <div class="certified col-md-12">Bangladesh Government Approved <b>Reg.No C-131476</b></div>
+                            <div class="certified col-md-12">Under The Ministry of Commerce </div>
+                            <div class="certified col-md-12">Email :info@deshitbd.com</div>
                         </div>
+                    </div>
+                </section>
+                <!-- Here goes code for course list table  -->
+                <section class="course-list">
+                    <div class="wrapper">
+                        <table id="acrylic">
+                            <thead>
+                                <tr>
+                                    <th>Name Of Course</th>
+                                    <th>Education Qualification</th>
+                                    <th>Course Fee</th>
+                                    <th>Course Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!--php code for fetching data from database and showing them dynamically inside a table-->
+                                <?php
+                                // Create connection
+                                $servername = "localhost";
+                                $username = "root";
+                                $password = "";
+                                $dbname = "desh_info";
+                                $conn = new mysqli($servername, $username, $password, $dbname);
+                                // Check connection
+                                if ($conn->connect_error) {
+                                    die("Connection failed: " . $conn->connect_error);
+                                }
+                                $sql = "SELECT * FROM course_info";
+                                $result = $conn->query($sql);
+
+                                if ($result->num_rows > 0) {
+                                    // output data of each row
+                                    while($row = $result->fetch_assoc()) {
+                                        echo "<tr>";
+                                            echo "<td data-label='Name'>".$row["Name"]."</td>";
+                                            echo "<td data-label='Age'>".$row["Education_Quality"]."</td>";
+                                            echo "<td data-label='Weight'>".$row["Course_Fee"]."</td>";
+                                            echo "<td data-label='Profession'>".$row["Course_Duration"]."</td>";
+                                        echo "</tr>";
+                                    }
+                                }
+                                ?>
+                            </tbody>
+                        </table>
                     </div>
                 </section>
                 <!-- .contact-form-->
@@ -250,12 +221,12 @@
             <div>
                 <div>
                     <ul id="menu">
-                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.php">Home</a></li>
                         <li><a href="#">Branch</a></li>
-                        <li><a href="result.html">Result</a></li>
-                        <li><a href="#">Courses</a></li>
-                        <li><a href="registration.html">Registration</a></li>
-                        <li><a href="contact.html">Any query</a></li>
+                        <li><a href="result.php">Result</a></li>
+                        <li><a href="courses.php">Courses</a></li>
+                        <li><a href="registration.php">Registration</a></li>
+                        <li><a href="contact.php">Any query</a></li>
                     </ul>
                 </div>
             </div>
