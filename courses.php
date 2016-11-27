@@ -104,7 +104,7 @@
                                 <h1>DESH INFORMATION TECHNOLOGY</h1></div>
                             <div class="certified col-md-12">Bangladesh Government Approved <b>Reg.No C-131476</b></div>
                             <div class="certified col-md-12">Under The Ministry of Commerce </div>
-                            <div class="certified col-md-12">Email :info@deshitbd.com</div>
+                            <div class="certified col-md-12">Email : info@deshitbd.com</div>
                         </div>
                     </div>
                 </section>
@@ -140,10 +140,10 @@
                                     // output data of each row
                                     while($row = $result->fetch_assoc()) {
                                         echo "<tr>";
-                                            echo "<td data-label='Name'>".$row["Name"]."</td>";
-                                            echo "<td data-label='Age'>".$row["Education_Quality"]."</td>";
-                                            echo "<td data-label='Weight'>".$row["Course_Fee"]."</td>";
-                                            echo "<td data-label='Profession'>".$row["Course_Duration"]."</td>";
+                                            echo "<td data-label='Name Of Course'>".$row["Name"]."</td>";
+                                            echo "<td data-label='Education Qualification'>".$row["Education_Quality"]."</td>";
+                                            echo "<td data-label='Course Fee'>".$row["Course_Fee"]."</td>";
+                                            echo "<td data-label='Course Duration'>".$row["Course_Duration"]."</td>";
                                         echo "</tr>";
                                     }
                                 }
