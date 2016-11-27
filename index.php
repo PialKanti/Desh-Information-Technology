@@ -315,36 +315,85 @@
                             <div class="row">
                                 <div class="col-sm-4 footer-block">
                                     <div class="footer-widget widget_text">
-                                        <div class="footer-logo">
-                                            <a href="#">
-                                                <p class="h3 company-name">Desh Information Technology</p>
-                                            </a>
+                                        <p class="footer_text">Our Philosophy</p>
+                                        <p class="text-size-20" style="padding-left:5px;"><em>"Make the business of ICT institutes ethically better"</em> </p>
+                                        <div class="line">
+                                            <p class="footer_text" style="padding-top:25px;">About Us</p>
+                                            <div class="col-sm-4">
+                                                <a class="image-hover-zoom" href="/"><img src="img/blog-04.jpg" width="130px" height="58px" alt=""></a>
+                                            </div>
+                                            <div class="col-sm-8">
+                                                <p class="text-size-18">We offer training for the directors and instructors of regional branch to develop the students.</p> <a class="text-more-info text-primary-hover" href="/">Read more</a> </div>
                                         </div>
-                                        <p>Continually matrix cross functional opportunities whereas ethical information. Compellingly streamline enabled human capital before resource-leveling internal or "organic".</p>
                                     </div>
                                 </div>
                                 <!-- /.col-sm-4 -->
                                 <div class="col-sm-4 footer-block">
                                     <div class="footer-widget widget_text">
-                                        <h3>We work for your profit</h3>
-                                        <p>Distinctively expedite viral materials rather than out-of-the-box solutions. Credibly empower revolutionary ROI rather than unique products. Collaboratively maximize principle-centered ideas before highly efficient data. Phosfluorescently.</p>
+                                        <p class="footer_text">Contact Us Today</p>
+                                        <div class="row" style="padding-left:8px;">
+                                            <div class="col-sm-12"> <i class="fa fa-map-marker awesome-icon" style="color:#31aae2;font-size: 1.3em" aria-hidden="true"></i>
+                                                <div style="display:inline-block;padding-left:8px">
+                                                    <p><b>Adress:</b>&nbsp;Dhaka,Bangladesh</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-left:8px;">
+                                            <div class="col-sm-12"> <i class="fa fa-envelope awesome-icon" style="color:#31aae2;font-size: 1.3em" aria-hidden="true"></i>
+                                                <div style="display:inline-block;padding-left:8px">
+                                                    <p><a href="mailto:info@deshitbd.com" class="text-primary-hover"><b>E-mail:</b>&nbsp;info@deshitbd.com</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="padding-left:8px;">
+                                            <div class="col-sm-12"> <i class="fa fa-phone awesome-icon" style="color:#31aae2;font-size: 1.3em" aria-hidden="true"></i>
+                                                <div style="display:inline-block;padding-left:8px">
+                                                    <p><b>Phone:</b>&nbsp;0123456789</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <ul class="list-inline social-links">
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        </ul>
                                     </div>
                                 </div>
                                 <!-- /.col-sm-4 -->
                                 <div class="col-sm-4 footer-block last">
-                                    <div class="footer-widget widget_text">
-                                        <h3>Contact Us Today</h3> <address>
-                            Call Us 666 777 888 OR 111 222 333<br>
-                            Send an Email on <a href="mailto:#">contact@domain.com</a><br>
-                            Visit Us 123 Fake Street- Blla 12358<br>
-                            Fake Kingdom<br>
-                        </address>
-                                        <ul class="list-inline social-links">
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                                        </ul>
+                                    <p class="footer_text">Leave a Message</p>
+                                    <div class="form-wrapper">
+                                        <form class="form-horizontal" action=" " method="" id="contact_form">
+                                            <fieldset>
+                                                <!-- Form Name -->
+                                                <!-- Text input-->
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                            <input name="first_name" placeholder="Name" class="form-control" type="text"> </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                                            <input name="email" placeholder="E-Mail Address" class="form-control" type="text"> </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Text input-->
+                                                <div class="form-group">
+                                                    <div class="col-md-12 inputGroupContainer">
+                                                        <div class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                                            <textarea class="form-control" name="comment" placeholder="Message" rows="3"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="col-md-12">
+                                                        <button type="submit" class="btn btn-warning pull-right">Send <span class="glyphicon glyphicon-send"></span></button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
                                     </div>
                                 </div>
                                 <!-- /.col-sm-4 -->
@@ -396,7 +445,6 @@
     <script src="js/mobile-menu.js"></script>
     <script src="js/flexSlider/jquery.flexslider-min.js"></script>
     <script src="js/scripts.js"></script>
-    <div/> <a style="font-size:0; height:0; width:0; opacity:0; position:absolute" target="_blank" href="http://www.uicookies.com">HTML Templates by uiCookies</a> </div>
 </body>
 
 </html>

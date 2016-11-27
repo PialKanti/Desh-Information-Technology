@@ -1833,8 +1833,78 @@ service-icon-style
 
 .footer .footer-block {
     border-right: 1px solid #3a3a3a;
-    padding: 80px 60px;
+    padding: 60px 60px;
     min-height: 380px;
+}
+
+p.footer_text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.text-size-20 {
+    font-size: 1.3em;
+}
+
+.text-size-18 {
+    font-size: 1.1em;
+}
+
+.image-hover-zoom {
+    display: block;
+    overflow: hidden;
+}
+
+.image-hover-zoom img {
+    transition: all 0.20s linear 0s;
+    -o-transition: all 0.20s linear 0s;
+    -ms-transition: all 0.20s linear 0s;
+    -moz-transition: all 0.20s linear 0s;
+    -webkit-transition: all 0.20s linear 0s;
+}
+
+.image-with-hover-overlay img {
+    width: 100%;
+}
+
+.image-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+
+/* More info button */
+
+a.text-more-info {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 0.625em;
+}
+
+a.text-more-info:after {
+    content: "...";
+    font-family: mfg;
+    font-size: 1.1em;
+    margin-left: 0.625em;
+    transition: all 0.20s linear 0s;
+    -o-transition: all 0.20s linear 0s;
+    -ms-transition: all 0.20s linear 0s;
+    -moz-transition: all 0.20s linear 0s;
+    -webkit-transition: all 0.20s linear 0s;
+}
+
+a.text-more-info:hover:after {
+    margin-left: 0.825rem;
+}
+
+/* footer form */
+#box{
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 4px;
+    top:50px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1868,6 +1938,10 @@ service-icon-style
 }
 
 .footer .widget_text {}
+
+.widget_text {
+    text-align: left;
+}
 
 .footer .footer-logo {
     margin-bottom: 25px;
