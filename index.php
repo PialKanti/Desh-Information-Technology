@@ -407,10 +407,10 @@
                         <div class="container clearfix"> <span class="copytext">Copyright &copy; 2016 | <a href="index.html">Desh Information Technology Ltd.</a> &nbsp;&nbsp;&nbsp;Designed And Developed By: <strong style="color: #31aae2;">#.com</strong></span>
                             <ul class="list-inline pull-right">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="#">Admin Panel</a></li>
+                                <li><a href="admin-panel.php">Admin Panel</a></li>
                                 <li><a href="#">Branch</a></li>
-                                <li><a href="#">Result</a></li>
-                                <li><a href="#">Contact</a></li>
+                                <li><a href="result.php">Result</a></li>
+                                <li><a href="contact.php">Contact</a></li>
                             </ul>
                         </div>
                         <!-- .container -->

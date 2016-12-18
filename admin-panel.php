@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
-
+<?php
+    session_start();
+?>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -91,42 +93,64 @@
                     <!-- .container -->
                 </nav>
                 <!-- .nav -->
-                <section class="single-page-title contact_us">
+                <section class="single-page-title registration">
                     <div class="container text-center">
-                        <h2 class="page-slider-title">Contact us</h2> </div>
+                        <h2 class="page-slider-title">Admin Panel</h2> </div>
                 </section>
-                <!-- .contact-form-->
-                <section class="contact-section ptb-100">
-                    <div class="container text-center contact_container">
-                        <h2 class="well">Write complain for any problem, we are here 24/365 for you.</h2>
-                        <div class="row">
-                            <div class="col-md-8 col-md-offset-2 well">
-                                <form action='' method="POST">
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group user-name">
-                                                <label for="nameFive-first" class="sr-only">Name</label>
-                                                <input type="text" class="form-control contact-form" required="" id="nameFive-first" placeholder="Name"> </div>
-                                            <div class="form-group user-email">
-                                                <label for="emailFive" class="sr-only">Email</label>
-                                                <input type="email" class="form-control contact-form" required="" id="emailFive" placeholder="Email Address"> </div>
-                                            <div class="form-group user-phone">
-                                                <label for="websiteOne" class="sr-only">Website</label>
-                                                <input type="text" class="form-control contact-form" required="" id="websiteOne" placeholder="Phone"> </div>
+                <!-- .page-title -->
+                <section class="admin-options ptb-100">
+                    <div class="container registration-container">
+                        <?php
+                            if(isset($_SESSION['UserName'])){
+                        ?>
+                            <div class="row col-sm-4 col-sm-offset-4"> <a class="btn icon-btn btn-success" href="#"><span class="glyphicon btn-glyphicon glyphicon-plus img-circle"></span>Uplaod result</a> </div>
+                            <?php
+                                }
+                                else{
+                            ?>
+                                <!-- Login form starts -->
+                                <div id="loginbox" style="margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <div class="panel-title">Log In to continue</div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group user-message">
-                                                <label for="messageOne" class="sr-only">Message</label>
-                                                <textarea class="form-control contact-form" required="" id="messageOne" placeholder="Write Message"></textarea>
-                                            </div>
+                                        <div style="padding-top:30px;margin-left:30px;margin-right:30px;" class="panel-body">
+                                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                                            <form id="loginform" class="form-horizontal" role="form" method="post" action="core/login_process.php">
+                                                <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                    <input id="login-username" type="text" class="form-control" name="userName" value="" placeholder="username or email"> </div>
+                                                <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                    <input id="login-password" type="password" class="form-control" name="passWord" placeholder="password"> </div>
+                                                <div class="input-group">
+                                                    <div class="checkbox">
+                                                        <label>
+                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me </label>
+                                                    </div>
+                                                </div>
+                                                <div style="margin-top:10px" class="form-group">
+                                                    <!-- Button -->
+                                                    <div class="col-sm-12 controls">
+                                                        <button id="btn-login" class="btn btn-primary" type="submit">Login </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            <?php
+                                        if(isset($_GET['login_error']) && $_GET['login_error']=='yes'){
+                                    ?>
+                                                <label class="error_logIN" style="color: #ff1a1a">&#42;&#42;You have entered wrong Username/Password.&#42;&#42;</label>
+                                                <?php
+                                        }
+                                    ?>
                                         </div>
                                     </div>
-                                    <button type="submit" class="btn btn-primary">Send Message</button>
-                                </form>
-                            </div>
-                        </div>
+                                </div>
+                                <!-- Login form starts -->
+                                <?php
+                                        }
+                                    ?>
                     </div>
                 </section>
+                <!-- .contact-form-->
                 <footer class="footer">
                     <!-- Footer Widget Section -->
                     <div class="footer-widget-section">
@@ -221,13 +245,13 @@
                     </div>
                     <!-- /.Footer Widget Section -->
                     <div class="copyright-section">
-                        <div class="container clearfix"> <span class="copytext">Copyright &copy; 2016 | <a href="index.html">Desh Information Technology Ltd.</a> &nbsp;&nbsp;&nbsp;Designed And Developed By: <strong style="color: #31aae2;">#.com</strong></span>
+                        <div class="container clearfix"> <span class="copytext">Copyright &copy; 2016 | <a href="index.html">Desh Information Technology Ltd.</a>&nbsp;&nbsp;&nbsp;Designed And Developed By: <strong style="color: #31aae2;">.com</strong></span>
                             <ul class="list-inline pull-right">
                                 <li class="active"><a href="#">Home</a></li>
-                                <li><a href="admin-panel.php">Admin Panel</a></li>
+                                <li><a href="#">Admin Panel</a></li>
                                 <li><a href="#">Branch</a></li>
-                                <li><a href="result.php">Result</a></li>
-                                <li><a href="contact.php">Contact</a></li>
+                                <li><a href="#">Result</a></li>
+                                <li><a href="#">Contact</a></li>
                             </ul>
                         </div>
                         <!-- .container -->
@@ -247,7 +271,7 @@
                         <li><a href="index.php">Home</a></li>
                         <li><a href="#">Branch</a></li>
                         <li><a href="result.php">Result</a></li>
-                        <li><a href="#">Courses</a></li>
+                        <li><a href="courses.php">Courses</a></li>
                         <li><a href="registration.php">Registration</a></li>
                         <li><a href="contact.php">Any query</a></li>
                     </ul>
