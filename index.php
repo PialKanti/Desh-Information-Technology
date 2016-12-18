@@ -26,6 +26,8 @@
     <![endif]-->
 </head>
 
+    <!-- Check git -->
+
 <body>
     <div id="main-wrapper">
         <!-- Page Preloader -->
