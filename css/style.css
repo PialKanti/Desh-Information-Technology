@@ -338,6 +338,14 @@ Shortcode Content
 --------------------------------*/
 
 
+/*navbar conatainer-fluid*/
+
+.container-fluid {
+    margin-left: 20px;
+    margin-right: 50px;
+}
+
+
 /*Navigation*/
 
 @media screen and (max-width: 768px) {
@@ -1104,7 +1112,6 @@ Gallery
 ----------------------------------------------- */
 
 .single-page-title {
-    /*background: url(../img/img-page-title.jpg) no-repeat bottom;*/
     background-size: cover;
     width: 100%;
     background-attachment: fixed;
@@ -1164,10 +1171,154 @@ Gallery
 
 .contact_us {
     background: url(../img/img_contact_us.jpg) no-repeat bottom;
+    background-size: cover;
 }
 
 .contact-container {
     max-width: 730px;
+}
+
+
+/* --------------------------------------------
+   Courses
+----------------------------------------------- */
+
+.course {
+    background: url(../img/img_courses.jpg) no-repeat bottom;
+    background-size: cover;
+}
+
+.course-header {
+    margin-top: 20px;
+    color: #313131;
+}
+
+.institute-name {
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+}
+
+.certified {
+    font-size: 12pt;
+    text-align: center;
+}
+
+table#acrylic {
+    border-collapse: separate;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin: 50px auto;
+    -moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+#acrylic thead {
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#acrylic thead th {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    padding: 20px;
+    background-size: 100%;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #646f7f), color-stop(100%, #4a5564));
+    background-image: -moz-linear-gradient(#646f7f, #4a5564);
+    background-image: -webkit-linear-gradient(#646f7f, #4a5564);
+    background-image: linear-gradient(#646f7f, #4a5564);
+    border-top: 1px solid #858d99;
+}
+
+#acrylic thead th:first-child {
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+#acrylic thead th:last-child {
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#acrylic tbody tr td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 13px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#acrylic tbody tr:nth-child(2n) {
+    background: #f0f3f5;
+}
+
+#acrylic tbody tr:last-child td {
+    border-bottom: none;
+}
+
+#acrylic tbody tr:last-child td:first-child {
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#acrylic tbody tr:last-child td:last-child {
+    -moz-border-bottom-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#acrylic tbody:hover > tr td {
+    filter: progid: DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+}
+
+#acrylic tbody:hover > tr:hover td {
+    text-shadow: none;
+    color: #2d2d2d;
+    filter: progid: DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    transition: 0.2s all;
+}
+
+@media screen and (max-width: 767px) {
+    #acrylic thead {
+        display: none;
+    }
+    #acrylic tr {
+        margin-bottom: 10px;
+        display: block;
+    }
+    #acrylic td {
+        display: block;
+        text-align: right;
+        font-size: 13px;
+        border-bottom: 1px dotted #ccc;
+    }
+    #acrylic td:last-child {
+        border-bottom: 0;
+    }
+    #acrylic td:before {
+        content: attr(data-label);
+        float: left;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    table#acrylic {
+        width: 100%;
+    }
 }
 
 
@@ -1442,15 +1593,15 @@ service-icon-style
         margin-right: 2px;
     }
     .single-page-title h2 {
-    display: inline-block;
-    font-size: 25px;
-    text-transform: uppercase;
-    font-weight: 700;
-    margin-bottom: 0;
-    color: #fff;
-    position: relative;
-    z-index: 1;
-}
+        display: inline-block;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 0;
+        color: #fff;
+        position: relative;
+        z-index: 1;
+    }
 }
 
 .notice-text {
@@ -1655,7 +1806,7 @@ service-icon-style
     min-width: 25px;
 }
 
-.btn-result-search{
+.btn-result-search {
     display: inline-block;
     padding: 6px 12px;
     margin-bottom: 0;
@@ -1682,8 +1833,78 @@ service-icon-style
 
 .footer .footer-block {
     border-right: 1px solid #3a3a3a;
-    padding: 80px 60px;
+    padding: 60px 60px;
     min-height: 380px;
+}
+
+p.footer_text {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.text-size-20 {
+    font-size: 1.3em;
+}
+
+.text-size-18 {
+    font-size: 1.1em;
+}
+
+.image-hover-zoom {
+    display: block;
+    overflow: hidden;
+}
+
+.image-hover-zoom img {
+    transition: all 0.20s linear 0s;
+    -o-transition: all 0.20s linear 0s;
+    -ms-transition: all 0.20s linear 0s;
+    -moz-transition: all 0.20s linear 0s;
+    -webkit-transition: all 0.20s linear 0s;
+}
+
+.image-with-hover-overlay img {
+    width: 100%;
+}
+
+.image-hover-zoom:hover img {
+    transform: scale(1.1);
+}
+
+
+/* More info button */
+
+a.text-more-info {
+    display: block;
+    font-size: 1.1em;
+    margin-top: 0.625em;
+}
+
+a.text-more-info:after {
+    content: "...";
+    font-family: mfg;
+    font-size: 1.1em;
+    margin-left: 0.625em;
+    transition: all 0.20s linear 0s;
+    -o-transition: all 0.20s linear 0s;
+    -ms-transition: all 0.20s linear 0s;
+    -moz-transition: all 0.20s linear 0s;
+    -webkit-transition: all 0.20s linear 0s;
+}
+
+a.text-more-info:hover:after {
+    margin-left: 0.825rem;
+}
+
+/* footer form */
+#box{
+    border: 1px solid rgb(200, 200, 200);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 5px 2px;
+    background: rgba(200, 200, 200, 0.1);
+    border-radius: 4px;
+    top:50px;
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -1717,6 +1938,10 @@ service-icon-style
 }
 
 .footer .widget_text {}
+
+.widget_text {
+    text-align: left;
+}
 
 .footer .footer-logo {
     margin-bottom: 25px;
