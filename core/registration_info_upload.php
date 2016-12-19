@@ -18,10 +18,12 @@ $sql = "INSERT INTO student_info(branch_name,branch_code,student_name,father_nam
 
 $result = mysqli_query($conn,$sql);
 if($result){
-    echo 'Successful';
+    header("Location:../registration.php?registration_sucess=yes");
+    die();
 }
 else{
-    echo 'not Successful';
+    header("Location:../registration.php?registration_not_sucess=yes");
+    die();
 }
 
 mysqli_close($conn);

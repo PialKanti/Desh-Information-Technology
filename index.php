@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php
+    session_start();
+?>
 
 <head>
     <meta charset="utf-8">
@@ -25,8 +28,7 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-
-    <!-- Check git -->
+<!-- Check git -->
 
 <body>
     <div id="main-wrapper">
@@ -85,7 +87,18 @@
                                         </li>
                                     </ul>
                                 </li>-->
-                                <li><a href="contact.php">Any query</a></li>
+                                <?php
+                                        if(isset($_SESSION['UserName'])){
+                                    ?>
+                                    <li><a href="#" class="btn btn-default"><span class="glyphicon glyphicon-off"></span>&nbsp;Logout</a></li>
+                                    <?php
+                                        }
+                                        else{
+                                    ?>
+                                        <li><a href="contact.php">Any query</a></li>
+                                        <?php
+                                        }
+                                    ?>
                             </ul>
                         </div>
                         <!-- .navbar-collapse -->

@@ -107,26 +107,76 @@
                 <!-- .nav -->
                 <section class="single-page-title registration">
                     <div class="container text-center">
-                        <h2 class="page-slider-title">Result</h2> </div>
+                        <h2 class="page-slider-title">Student's Result</h2> </div>
                 </section>
                 <!-- .page-title -->
-                <section class="registration-form ptb-100">
+                <section class="registration-form ptb-100" style="color:#000;font-size:15px">
                     <div class="container registration-container">
-                        <h1 class="well" style="text-align:center">Enter roll for see result</h1>
-                        <div class="col-md-12 well">
+                        <?php
+include "core/dbRegister.php";
+$roll=$_POST['roll'];
+
+
+$sql = "SELECT * FROM student_info WHERE roll_no='$roll'";
+
+$name = mysqli_query($conn,$sql);
+if($row=mysqli_fetch_assoc($name)){ ?>
                             <div class="row">
                                 <div class="col-md-10 col-md-offset-1">
-                                    <form class="navbar-search" role="search" method="post" action="search_result.php">
-                                        <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="Enter Your Roll Here.." name="roll">
-                                            <div class="input-group-btn">
-                                                <button type="submit" class="btn btn-search btn-info btn-result-search"> <span class="glyphicon glyphicon-search"></span> <span class="label-icon">Search</span> </button>
+                                    <div class="panel panel-info">
+                                        <div class="panel-heading">
+                                            <h3 class="panel-title"><?php echo $row['student_name']; ?></h3> </div>
+                                        <div class="panel-body">
+                                            <div class="row">
+                                                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="img/user_pic.png" class="img-circle img-responsive"> </div>
+                                                <div class=" col-md-9 col-lg-9 ">
+                                                    <table class="table table-user-information">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Father's name</td>
+                                                                <td>
+                                                                    <?php echo $row['father_name']; ?>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Branch name</td>
+                                                                <td>
+                                                                    <?php echo $row['branch_name']; ?>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Reg no</td>
+                                                                <td>
+                                                                    <?php echo $row['reg_no']; ?>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Roll no</td>
+                                                                <td>
+                                                                    <?php echo $row['roll_no']; ?>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6 col-md-offset-3" align="center">
+                                                        <p style="color: #31aae2;font-size: 20px;font-style: oblique;"><strong>Result : <?php echo $row['result']; ?></strong></p>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </form>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                            <?php
+                            }
+                        else{
+                        ?>
+                        <div class="alert alert-danger"> <a href="#" class="close" data-dismiss="alert">&times;</a> <strong>No student found!</strong><a href="result.php" style="padding-left:30px;text-decoration: underline">Try again</a></div>
+                                <?php
+                        }
+                        ?>
                     </div>
                 </section>
                 <!-- .contact-form-->

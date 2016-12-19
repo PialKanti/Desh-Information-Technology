@@ -113,125 +113,137 @@
                     <section class="logIN-form ptb-100">
                         <div class="container registration-container">
                             <?php
-                            if(isset($_SESSION['UserName'])){
-                        ?>
-                                <!-- Registration form starts -->
-                                <h1 class="well">Registration Form</h1>
-                                <div class="col-lg-12 well">
-                                    <div class="row">
-                                        <form action='core/registration_info_upload.php' method="POST">
-                                            <div class="col-sm-12">
-                                                <div class="row">
-                                                    <div class="col-sm-8 form-group required">
-                                                        <label class="form-text">Branch</label>
-                                                        <input type="text" placeholder="Enter First Name Here.." class="form-control" name="branch" required> </div>
-                                                    <div class="col-sm-4 form-group">
-                                                        <label class="form-text">Branch Code</label>
-                                                        <input type="text" placeholder="Enter Last Name Here.." class="form-control" name="branch_code" required> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group required">
-                                                        <label class="form-text">Student Name</label>
-                                                        <input type="text" placeholder="Enter Your Name Here.." class="form-control" name="std_name" required> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group required">
-                                                        <label class="form-text">Father's Name</label>
-                                                        <input type="text" placeholder="Enter Your Father's Name Here.." class="form-control" name="fa_name" required> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group required">
-                                                        <label class="form-text">Mother's Name</label>
-                                                        <input type="text" placeholder="Enter Your Mother's Name Here.." class="form-control" name="mom_name" required> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-7 form-group required">
-                                                        <label class="form-text">Course Name</label>
-                                                        <input type="text" placeholder="Enter Course Name.." class="form-control" name="course" required> </div>
-                                                    <div class="col-sm-5 form-group required">
-                                                        <label class="form-text">Session</label>
-                                                        <input type="text" placeholder="Enter Course Name.." class="form-control" name="session" required> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-8 form-group required">
-                                                        <label class="form-text">Education(Last Academy)</label>
-                                                        <input type="text" placeholder="Enter Course Name.." class="form-control" name="education"> </div>
-                                                    <div class="col-sm-4 form-group required">
-                                                        <label class="form-text">Birth date</label>
-                                                        <div class="input-group input-append date" id="datePicker">
-                                                            <input type="text" class="form-control" name="birth_date" /> <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group required">
-                                                        <label class="form-text">Email</label>
-                                                        <input type="email" placeholder="Enter Your Email Here.." class="form-control" name="email"> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-12 form-group required">
-                                                        <label class="form-text">Board/University</label>
-                                                        <input type="text" placeholder="Enter Your Board/University Name Here.." class="form-control" name="board"> </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-sm-5 form-group required">
-                                                        <label class="form-text">Roll</label>
-                                                        <input type="text" placeholder="Enter Your Roll Here.." class="form-control" name="roll" required> </div>
-                                                    <div class="col-sm-5 col-sm-offset-2 form-group required">
-                                                        <label class="form-text">Reg</label>
-                                                        <input type="text" placeholder="Enter Your Reg Here.." class="form-control" name="reg" required> </div>
-                                                </div>
-                                                <div class="form-group"> <span class="text-muted"><em><span style="color:red;font-size:14px">*</span> Indicates required field</em>
-                                                    </span>
-                                                </div>
-                                                <button type="submit" class="btn btn-lg btn-info">Submit</button>
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                <!-- Registration form ends -->
+                                if(isset($_GET['registration_sucess']) && $_GET['registration_sucess']=='yes'){
+                            ?>
+                                <div class="alert alert-success"> <a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Registration Successful!</strong> Student information is updated into database. </div>
                                 <?php
+                                    }
+                                    else if(isset($_GET['registration_not_sucess']) && $_GET['registration_not_sucess']=='yes'){
+                                ?>
+                                    <div class="alert alert-danger"> <a href="#" class="close" data-dismiss="alert">&times;</a> <strong>Registration unsucessful!</strong> Please check your internet connection and try again. </div>
+                                    <?php
+                                            }
+                                    ?>
+                                        <?php
+                            if(isset($_SESSION['UserName'])){
+                             ?>
+                                            <!-- Registration form starts -->
+                                            <h1 class="well">Registration Form</h1>
+                                            <div class="col-lg-12 well">
+                                                <div class="row">
+                                                    <form action='core/registration_info_upload.php' method="POST">
+                                                        <div class="col-sm-12">
+                                                            <div class="row">
+                                                                <div class="col-sm-8 form-group required">
+                                                                    <label class="form-text">Branch</label>
+                                                                    <input type="text" placeholder="Enter First Name Here.." class="form-control" name="branch" required> </div>
+                                                                <div class="col-sm-4 form-group">
+                                                                    <label class="form-text">Branch Code</label>
+                                                                    <input type="text" placeholder="Enter Last Name Here.." class="form-control" name="branch_code" required> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 form-group required">
+                                                                    <label class="form-text">Student Name</label>
+                                                                    <input type="text" placeholder="Enter Your Name Here.." class="form-control" name="std_name" required> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 form-group required">
+                                                                    <label class="form-text">Father's Name</label>
+                                                                    <input type="text" placeholder="Enter Your Father's Name Here.." class="form-control" name="fa_name" required> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 form-group required">
+                                                                    <label class="form-text">Mother's Name</label>
+                                                                    <input type="text" placeholder="Enter Your Mother's Name Here.." class="form-control" name="mom_name" required> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-7 form-group required">
+                                                                    <label class="form-text">Course Name</label>
+                                                                    <input type="text" placeholder="Enter Course Name.." class="form-control" name="course" required> </div>
+                                                                <div class="col-sm-5 form-group required">
+                                                                    <label class="form-text">Session</label>
+                                                                    <input type="text" placeholder="Enter Course Name.." class="form-control" name="session" required> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-8 form-group required">
+                                                                    <label class="form-text">Education(Last Academy)</label>
+                                                                    <input type="text" placeholder="Enter Course Name.." class="form-control" name="education"> </div>
+                                                                <div class="col-sm-4 form-group required">
+                                                                    <label class="form-text">Birth date</label>
+                                                                    <div class="input-group input-append date" id="datePicker">
+                                                                        <input type="text" class="form-control" name="birth_date" /> <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 form-group required">
+                                                                    <label class="form-text">Email</label>
+                                                                    <input type="email" placeholder="Enter Your Email Here.." class="form-control" name="email"> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-12 form-group required">
+                                                                    <label class="form-text">Board/University</label>
+                                                                    <input type="text" placeholder="Enter Your Board/University Name Here.." class="form-control" name="board"> </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-5 form-group required">
+                                                                    <label class="form-text">Roll</label>
+                                                                    <input type="text" placeholder="Enter Your Roll Here.." class="form-control" name="roll" required> </div>
+                                                                <div class="col-sm-5 col-sm-offset-2 form-group required">
+                                                                    <label class="form-text">Reg</label>
+                                                                    <input type="text" placeholder="Enter Your Reg Here.." class="form-control" name="reg" required> </div>
+                                                            </div>
+                                                            <div class="form-group"> <span class="text-muted"><em><span style="color:red;font-size:14px">*</span> Indicates required field</em>
+                                                                </span>
+                                                            </div>
+                                                            <button type="submit" class="btn btn-lg btn-info">Submit</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <!-- Registration form ends -->
+                                            <?php
                                     }
                                     else{
                                 ?>
-                                    <!-- Login form ends -->
-                                    <div id="loginbox" style="margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
-                                        <div class="panel panel-info">
-                                            <div class="panel-heading">
-                                                <div class="panel-title">Log In to continue</div>
-                                            </div>
-                                            <div style="padding-top:30px;margin-left:30px;margin-right:30px;" class="panel-body">
-                                                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
-                                                <form id="loginform" class="form-horizontal" role="form" method="post" action="core/registration_process.php">
-                                                    <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-                                                        <input id="login-username" type="text" class="form-control" name="userName" value="" placeholder="username or email"> </div>
-                                                    <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                                                        <input id="login-password" type="password" class="form-control" name="passWord" placeholder="password"> </div>
-                                                    <div class="input-group">
-                                                        <div class="checkbox">
-                                                            <label>
-                                                                <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me </label>
+                                                <!-- Login form ends -->
+                                                <div id="loginbox" style="margin-top:50px" class="mainbox col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2">
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading">
+                                                            <div class="panel-title">Log In to continue</div>
                                                         </div>
-                                                    </div>
-                                                    <div style="margin-top:10px" class="form-group">
-                                                        <!-- Button -->
-                                                        <div class="col-sm-12 controls">
-                                                            <button id="btn-login" class="btn btn-primary" type="submit">Login </button>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                                <?php
+                                                        <div style="padding-top:30px;margin-left:30px;margin-right:30px;" class="panel-body">
+                                                            <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                                                            <form id="loginform" class="form-horizontal" role="form" method="post" action="core/registration_process.php">
+                                                                <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                                                    <input id="login-username" type="text" class="form-control" name="userName" value="" placeholder="username or email"> </div>
+                                                                <div style="margin-bottom: 25px" class="input-group"> <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                                                    <input id="login-password" type="password" class="form-control" name="passWord" placeholder="password"> </div>
+                                                                <div class="input-group">
+                                                                    <div class="checkbox">
+                                                                        <label>
+                                                                            <input id="login-remember" type="checkbox" name="remember" value="1"> Remember me </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div style="margin-top:10px" class="form-group">
+                                                                    <!-- Button -->
+                                                                    <div class="col-sm-12 controls">
+                                                                        <button id="btn-login" class="btn btn-primary" type="submit">Login </button>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                            <?php
                                         if(isset($_GET['login_error']) && $_GET['login_error']=='yes'){
                                     ?>
-                                                    <label class="error_logIN" style="color: #ff1a1a">&#42;&#42;You have entered wrong Username/Password.&#42;&#42;</label>
-                                                    <?php
+                                                                <label class="error_logIN" style="color: #ff1a1a">&#42;&#42;You have entered wrong Username/Password.&#42;&#42;</label>
+                                                                <?php
                                         }
                                     ?>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Login form ends -->
-                                    <?php
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- Login form ends -->
+                                                <?php
                                             }
                                         ?>
                         </div>
